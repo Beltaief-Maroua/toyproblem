@@ -12,37 +12,16 @@
 
 //  var commonCharacters = 
 
- 
-function f(a, b) {
-  for (i=0 ; i<a.length ; i++)
-  { var x
-    var y    
-    x=a[i]
-    y=b[i] 
-    if (x===y)
-  {
-    console.log (x)
-  }
-  else 
-  {"pas de lettre en commun"}
-  }
-}
-f('acexivou', 'aegihobu')
 
-// function fact (n)
-// { var i=1
-//  var result
-//  while (i<=n)
-//  { result = result*i
-//   i++ 
-//  }
-//  return result
-//  }
-//      function(5)
 
-function fact(n)
-    { if (n===1) 
-    { return 1 }
-    return n*fact(n-1)
+
+var commonCharacters = function (str1 , str2)
+     {
+      var result =''
+        for ( var i=0 ; i<str1.lenght ; i++)
+        {
+          if(str2.includes(str1[i]) && result.indexOf(str1) === -1  )
+          result = result+str1[i]
+        }
+        return result
     }
- 
